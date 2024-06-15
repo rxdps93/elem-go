@@ -212,4 +212,21 @@ const (
 	// Animations pseudo-classes
 	PseudoPlaying = ":playing"
 	PseudoPaused  = ":paused"
+
+	// Typographic pseudo-elements
+	PseudoFirstLine   = "::first-line"
+	PseudoFirstLetter = "::first-letter"
+
+	// Highlight pseudo-elements
+	PseudoSelection     = "::selection"
+	PseudoTargetText    = "::target-text"
+	PseudoSpellingError = "::spelling-error"
+	PseudoGrammarError  = "::grammar-error"
+
+	// Tree-Abiding pseudo-elements
+	PseudoBefore       = "::before"
+	PseudoAfter        = "::after"
+	PseudoMarker       = "::marker"
+	PseudoPlaceholder  = "::placeholder"
+	PseudoFileSelector = "::file-selector-button"
 )

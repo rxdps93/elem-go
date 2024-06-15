@@ -1,10 +1,11 @@
 package main
 
 import (
+	"net/http"
+
 	"github.com/chasefleming/elem-go"
 	"github.com/chasefleming/elem-go/attrs"
 	"github.com/chasefleming/elem-go/styles"
-	"net/http"
 )
 
 func generateWebContent() string {
@@ -49,6 +50,9 @@ func generateWebContent() string {
 			styles.Padding:         "20px",
 			styles.BackgroundColor: "lightgray",
 			styles.Margin:          "10px",
+		},
+		PseudoClasses: map[string]styles.Props{
+			styles.PseudoAfter: {styles.Content: styles.String("...if you dare!")},
 		},
 		MediaQueries: map[string]styles.Props{
 			"@media (max-width: 600px)": {

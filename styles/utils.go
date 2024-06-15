@@ -99,6 +99,15 @@ func Var(name string) string {
 	return builder.String()
 }
 
+// String returns the given string surrounded by double quotes; useful for CSS content: "some string"
+func String(str string) string {
+	var builder strings.Builder
+	builder.WriteString("\"")
+	builder.WriteString(str)
+	builder.WriteString("\"")
+	return builder.String()
+}
+
 // ViewportHeight returns a string representation of the given integer as a viewport height value.
 func ViewportHeight(value int) string {
 	return strconv.Itoa(value) + "vh"
