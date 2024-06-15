@@ -40,6 +40,7 @@ const (
 	GridTemplateAreas   = "grid-template-areas"
 	GridTemplateColumns = "grid-template-columns"
 	GridTemplateRows    = "grid-template-rows"
+	Clear               = "clear"
 
 	// Box Model Properties
 	Width             = "width"
